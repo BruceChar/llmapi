@@ -1,0 +1,33 @@
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8080/",
+        "/": {
+            "hello": {
+                "method": "GET",
+                "query": {
+                    "name": "Bruce",
+                    "age": 30
+                }
+            }
+        },
+        "v1": {
+            "create": {
+                "method": "POST",
+                "body": [
+                    {
+                        "age": 30,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "Alice",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    },
+    "header": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer {{token}}"
+    }
+}
